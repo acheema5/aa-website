@@ -26,7 +26,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="fixed top-0 left-0 bottom-0 w-1/2 z-0">
+      <div className="fixed top-0 left-0 bottom-0 w-full z-0">
         <Dither
           waveColor={[0.9764705882352941,0.5254901960784314,0.8941176470588236]}
           disableAnimation={false}
@@ -37,6 +37,12 @@ export default function Home() {
           waveAmplitude={0.15}
           waveFrequency={3}
           waveSpeed={0.05}
+        />
+        <div
+          className="absolute inset-0 z-10"
+          style={{
+            background: 'linear-gradient(to right, transparent 0%, transparent 50%, black 70%)'
+          }}
         />
       </div>
     </div>
